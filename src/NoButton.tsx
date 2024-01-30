@@ -6,6 +6,7 @@ export const NoButton = () => {
     const button = useRef();
 
     const setNewPosition = () => {
+        if (!button.current) return;
 
         // Choose the newX and newY positions randomly within the viewport with a 10px buffer
         const newX = Math.floor(Math.random() * (window.innerWidth - 100));
