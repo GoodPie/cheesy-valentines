@@ -11,7 +11,7 @@ const AnimatedHeart = () => {
         // Set the start position somewhere random on the x axis, and at the bottom of the screen
         const startX = Math.floor(Math.random() * (window.innerWidth - 100));
         const startY = window.innerHeight - (Math.random() * -2000);
-        const current = button.current as HTMLElement;
+        const current = heartRef.current as HTMLElement;
 
 
         current.style.left = `${startX}px`;
