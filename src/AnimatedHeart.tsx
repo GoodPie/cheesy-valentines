@@ -11,13 +11,15 @@ const AnimatedHeart = () => {
         // Set the start position somewhere random on the x axis, and at the bottom of the screen
         const startX = Math.floor(Math.random() * (window.innerWidth - 100));
         const startY = window.innerHeight - (Math.random() * -2000);
+        const current = button.current as HTMLElement;
 
-        heartRef.current.style.left = `${startX}px`;
-        heartRef.current.style.top = `${startY}px`;
+
+        current.style.left = `${startX}px`;
+        current.style.top = `${startY}px`;
 
         // Start the heart at a random angle
         const startAngle = Math.floor(Math.random() * 360);
-        heartRef.current.style.transform = `rotate(${startAngle}deg)`;
+        current.style.transform = `rotate(${startAngle}deg)`;
 
 
     }, []);
