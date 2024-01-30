@@ -12,9 +12,10 @@ export const NoButton = () => {
         const newX = Math.floor(Math.random() * (window.innerWidth - 100));
         const newY = Math.floor(Math.random() * (window.innerHeight - 100));
 
-        button.current.style.left = `${newX}px`;
-        button.current.style.top = `${newY}px`;
-        button.current.style.position = "absolute"
+        const current = button.current as HTMLElement;
+        current.style.left = `${newX}px`;
+        current.style.top = `${newY}px`;
+        current.style.position = "absolute"
         setMoveCount((prev) => prev + 1);
     }
 
