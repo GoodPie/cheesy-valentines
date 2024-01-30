@@ -8,7 +8,7 @@
 .animated-heart {
     animation: heart 3s infinite;
     position: absolute;
-
+    z-index: 1;
 
 }
 

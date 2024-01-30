@@ -15,7 +15,7 @@ function App() {
     <div className={"bg-pink-300 overflow-hidden overflow-y-hidden min-h-screen win-w-screen p-0 flex flex-col  items-center"}>
         {!hasSaidYes &&
             <>
-            <img src={cat} alt={"Cat holding flowers"} className={"w-80"}/>
+            <img  src={cat} alt={"Cat holding flowers"} className={"w-80"}/>
             <div>
             Will you be my valentine?
             </div>
@@ -26,8 +26,8 @@ function App() {
 
         {hasSaidYes &&
             <>
-                <img src={cat_glasses} alt={"Cat wearing glasses"} className={"w-80"}/>
-                <div>
+                <img style={{zIndex: 2}} src={cat_glasses} alt={"Cat wearing glasses"} className={"w-80"}/>
+                <div style={{zIndex: 2}}>
                     See you on feb 14th 😘
                 </div>
                 {[...Array(500)].map((_, index) => (
