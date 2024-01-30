@@ -30,7 +30,7 @@ function App() {
                 <div style={{zIndex: 2}}>
                     See you on feb 14th 😘
                 </div>
-                {[...Array(500)].map((_, index) => (
+                {[...Array(200)].map((_, index) => (
                     <AnimatedHeart key={"Heart-" + index} />
                 ))}
             </>
